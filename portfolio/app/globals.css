@@ -1,0 +1,101 @@
+/* --- Estilos Globais (Corpo da Página) --- */
+body {
+  background-color: #000000; /* Garante que o fundo seja preto */
+  color: #e0e0e0; /* Cor de texto padrão: cinza-claro, confortável para ler */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* --- Alinhamento (classe que você já usa) --- */
+.centralized {
+  text-align: center;
+}
+
+/* --- Títulos e Parágrafos --- */
+h1 {
+  color: #ffffff; /* Título principal em branco puro para maior destaque */
+  font-size: 2.5rem;
+}
+
+p {
+  line-height: 1.6; /* Melhora a legibilidade dos parágrafos */
+}
+
+/* --- Links --- */
+a {
+  color: #0099ff; /* Um azul vibrante que se destaca no fundo preto */
+  text-decoration: none; /* Remove o sublinhado padrão */
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #4db8ff; /* O link fica um pouco mais claro ao passar o mouse */
+  text-decoration: underline;
+}
+
+/* --- Imagem de Perfil --- */
+.imagem {
+  border-radius: 50%; /* Mantém a imagem redonda */
+  border: 3px solid #0b3d0b; /* Borda cinza-escura para separar do fundo */
+}
+
+/* --- Linha Divisória --- */
+hr {
+  border: none;
+  height: 1px;
+  background-color: #333; /* Linha cinza-escura, sutil no fundo preto */
+  margin: 2rem auto;
+}
+
+/* --- Lista de Tecnologias (Estilo de "Tags") --- */
+ul.centralized {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem; /* Espaçamento entre as tags */
+}
+
+ul.centralized li {
+  background-color: #222; /* Fundo cinza-escuro para cada item */
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+/* --- Seção de Projetos (Cores já ajustadas) --- */
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  max-width: 800px;
+  margin: 1.5rem auto 0;
+  padding: 0 1rem;
+}
+
+.projectCard {
+  border: 1px solid #444;
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #111;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.projectCard:hover {
+  transform: translateY(-5px);
+  border-color: #0099ff; /* Usa a mesma cor azul dos links no hover */
+}
+
+.projectCard h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+  color: #ffffff;
+}
+
+.projectCard p {
+  margin: 0;
+  color: #ccc;
+  font-size: 1rem;
+}
