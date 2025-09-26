@@ -22,14 +22,15 @@ export default function Home() {
     <main className={styles.container}>
       
       <header className={styles.introSection}>
-        <Image 
-          className={styles.profileImage} 
-          src="/assets/images/perfil.jfif"
-          width={150} 
-          height={150}
-          alt="Foto de perfil de Vinícius Mergulhão"
-          priority 
-        />
+<Image 
+  className={styles.profileImage}
+  src="/assets/images/perfil.jpg"
+  width={150}
+  height={150}
+  alt="Foto de perfil de Vinícius Mergulhão"
+  priority
+/>
+
         <h1 className={styles.title}>Olá, me chamo Vinícius Mergulhão!</h1>
         <p className={styles.subtitle}>
           Sou estudante de Ciência da Computação na UNICAP e atualmente estou cursando o 6º período.
